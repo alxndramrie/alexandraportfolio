@@ -1,20 +1,24 @@
 
-/* ======================================
-   ALEXANDRA PINEDA - PORTFOLIO THEME
-   ====================================== */
+/* ==========================================
+   ALEXANDRA PINEDA - PORTFOLIO WEBSITE
+   Charcoal, Mauve, Plum & Soft Pink Theme
+   ========================================== */
 
 :root {
-  --background: #101827;
-  --surface: #18243a;
-  --surface-hover: #21314a;
-  --accent: #b8baff;
-  --accent-light: #d3d4ff;
-  --text-primary: #f8f9ff;
-  --text-secondary: #c9d4e5;
-  --border: #34435b;
+  --background: #22292F;
+  --surface: #4D3659;
+  --surface-hover: #62496C;
+  --accent: #F7C9C9;
+  --accent-light: #FFE1E1;
+  --mauve: #866579;
+  --text-primary: #FFFFFF;
+  --text-secondary: #E5DDE4;
+  --border: #866579;
 }
 
-/* Main layout */
+/* ==========================================
+   MAIN LAYOUT
+   ========================================== */
 
 .portfolio {
   max-width: 1150px;
@@ -22,9 +26,9 @@
   padding: 0 30px;
 }
 
-/* ======================================
-   NAVIGATION
-   ====================================== */
+/* ==========================================
+   NAVIGATION BAR
+   ========================================== */
 
 .navbar {
   display: flex;
@@ -52,7 +56,7 @@
 }
 
 .logo:hover .logo-image {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 .nav-links {
@@ -73,9 +77,9 @@
   color: var(--accent);
 }
 
-/* ======================================
-   HOME / HERO SECTION
-   ====================================== */
+/* ==========================================
+   HOMEPAGE / HERO
+   ========================================== */
 
 .hero {
   display: flex;
@@ -107,7 +111,7 @@
 }
 
 .hero h2 {
-  color: var(--accent-light);
+  color: var(--accent);
   font-size: clamp(22px, 3vw, 30px);
   margin: 0 0 25px;
 }
@@ -120,7 +124,9 @@
   max-width: 650px;
 }
 
-/* Profile photo */
+/* ==========================================
+   PROFILE PHOTO
+   ========================================== */
 
 .hero-image {
   flex: 0.9;
@@ -136,14 +142,14 @@
   height: 390px;
   object-fit: cover;
   object-position: center 35%;
-  border: 3px solid var(--accent);
+  border: 3px solid var(--mauve);
   border-radius: 22px;
-  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.35);
 }
 
-/* ======================================
+/* ==========================================
    BUTTONS
-   ====================================== */
+   ========================================== */
 
 .hero-buttons,
 .contact-links {
@@ -170,7 +176,7 @@
 
 .primary-button {
   background: var(--accent);
-  color: #101827;
+  color: var(--background);
 }
 
 .primary-button:hover {
@@ -179,18 +185,18 @@
 }
 
 .secondary-button {
-  color: var(--text-primary);
-  border: 1px solid var(--accent);
+  color: var(--accent);
+  border: 1px solid var(--mauve);
 }
 
 .secondary-button:hover {
-  background: rgba(184, 186, 255, 0.1);
+  background: var(--surface);
   transform: translateY(-3px);
 }
 
-/* ======================================
-   MAIN CONTENT SECTIONS
-   ====================================== */
+/* ==========================================
+   CONTENT SECTIONS
+   ========================================== */
 
 .content-section {
   padding: 85px 0;
@@ -203,9 +209,9 @@
   margin: 12px 0 25px;
 }
 
-/* ======================================
-   SKILLS
-   ====================================== */
+/* ==========================================
+   TECHNICAL SKILLS
+   ========================================== */
 
 .skills {
   display: flex;
@@ -216,23 +222,25 @@
 .skill {
   background: var(--surface);
   color: var(--text-primary);
-  border: 1px solid var(--border);
+  border: 1px solid var(--mauve);
   border-radius: 10px;
   padding: 12px 18px;
   font-size: 14px;
   transition:
     background 0.2s ease,
-    border-color 0.2s ease;
+    border-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .skill:hover {
   background: var(--surface-hover);
   border-color: var(--accent);
+  transform: translateY(-2px);
 }
 
-/* ======================================
-   PROJECTS
-   ====================================== */
+/* ==========================================
+   FEATURED PROJECTS
+   ========================================== */
 
 .project-grid {
   display: grid;
@@ -245,7 +253,7 @@
   display: flex;
   flex-direction: column;
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid var(--mauve);
   border-radius: 18px;
   padding: 30px;
   min-height: 295px;
@@ -258,7 +266,7 @@
 .project-card:hover {
   transform: translateY(-5px);
   border-color: var(--accent);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .project-symbol {
@@ -280,6 +288,10 @@
   flex-grow: 1;
 }
 
+/* ==========================================
+   PROJECT TECHNOLOGY TAGS
+   ========================================== */
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -289,12 +301,16 @@
 }
 
 .project-tags span {
-  background: var(--surface-hover);
-  color: var(--accent-light);
+  background: var(--background);
+  color: var(--accent);
   border-radius: 7px;
   padding: 7px 11px;
   font-size: 12px;
 }
+
+/* ==========================================
+   GITHUB PROJECT LINKS
+   ========================================== */
 
 .project-link {
   display: inline-flex;
@@ -312,9 +328,21 @@
   text-decoration: underline;
 }
 
-/* ======================================
+/* ==========================================
+   CONTACT SECTION
+   ========================================== */
+
+#contact .section-description {
+  max-width: 650px;
+}
+
+.contact-links a {
+  text-align: center;
+}
+
+/* ==========================================
    FOOTER
-   ====================================== */
+   ========================================== */
 
 footer {
   display: flex;
@@ -324,11 +352,13 @@ footer {
   gap: 15px;
   padding: 30px 0;
   border-top: 1px solid var(--border);
-  color: #a8b9d0;
+  color: var(--text-secondary);
   font-size: 13px;
 }
 
-/* Keyboard accessibility */
+/* ==========================================
+   ACCESSIBILITY
+   ========================================== */
 
 a:focus-visible {
   outline: 2px solid var(--accent);
@@ -336,9 +366,9 @@ a:focus-visible {
   border-radius: 4px;
 }
 
-/* ======================================
-   TABLETS AND MOBILE
-   ====================================== */
+/* ==========================================
+   TABLET AND MOBILE RESPONSIVENESS
+   ========================================== */
 
 @media (max-width: 768px) {
   .navbar {
@@ -419,5 +449,24 @@ a:focus-visible {
   .hero-description,
   .section-description {
     font-size: 15px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
 }
