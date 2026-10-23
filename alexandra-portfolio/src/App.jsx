@@ -1,5 +1,6 @@
 import "./App.css";
 import profilePhoto from "./assets/profile.jpg";
+import alexandraLogo from './assets/Alexandra.svg';
 
 const skills = [
   "React",
@@ -67,8 +68,12 @@ function App() {
   return (
     <div className="portfolio">
       <header className="navbar">
-        <a href="#home" className="logo">
-          AP<span>.</span>
+        <a href="#home" className="logo" aria-label="Alexandra Pineda - Home">
+          <img
+            src={alexandraLogo}
+            alt="Alexandra Pineda logo"
+            className="logo-image"
+          />
         </a>
 
         <nav className="nav-links">
